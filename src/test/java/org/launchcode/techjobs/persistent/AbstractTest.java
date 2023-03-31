@@ -1,5 +1,8 @@
 package org.launchcode.techjobs.persistent;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
@@ -18,5 +21,7 @@ public class AbstractTest {
     protected Class getClassByName(String className) throws ClassNotFoundException {
         return Class.forName("org.launchcode.techjobs.persistent." + className);
     }
+
+
 
 }
